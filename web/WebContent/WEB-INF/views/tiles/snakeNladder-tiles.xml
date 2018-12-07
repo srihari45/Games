@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="main" template="/WEB-INF/views/tiles/layout/baseLayout.jsp">
+		<put-attribute name="title" value="Games"/>
+		<put-attribute name="cssInclude" value="/WEB-INF/views/tiles/template/cssInclude.jsp" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/template/header.jsp" />
+		<put-attribute name="body" value=""/>
+		<put-attribute name="jsInclude" value="/WEB-INF/views/tiles/template/jsInclude.jsp" />
+    	<put-attribute name="footer" value="/WEB-INF/views/tiles/template/footer.jsp" />  
+	</definition>
+	
+	<definition name="exception" extends="main">
+       <put-attribute name="title" value="Error" />
+       <put-attribute name="header" value="" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/jsp/error/exception.jsp" />
+    </definition>	
+
+	<definition name ="showSnakeNladderHome" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/pages/jsp/snakeNladder/showHome.jsp"/>
+	</definition>
+	
+	<definition name ="playingSnakeNladderGame" extends="main">
+		<put-attribute name="body" value="/WEB-INF/views/pages/jsp/snakeNladder/playGame.jsp"/>
+	</definition>
+	
+</tiles-definitions>

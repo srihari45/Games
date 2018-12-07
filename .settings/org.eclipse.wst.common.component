@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="2.0">
+	<wb-module deploy-name="games">
+		<property name="context-root" value="games"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="app/JavaSource"/>
+		<wb-resource deploy-path="/WEB-INF/classes" source-path="web/JavaSource"/>
+		<wb-resource deploy-path="/" source-path="web/WebContent"/>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/5.0.4.RELEASE/3e76d08c851113077642c5704f0f94d5ce58e905/spring-context-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.4.RELEASE/addcf1caa22613c474bd6dde8c7134fef940b1f0/spring-webmvc-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/5.0.4.RELEASE/9565bbc67bf1a850a6505deaa5103931712a7b80/spring-web-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/5.0.4.RELEASE/2221a957b5561a34f044350ba4e30ef5870254a3/spring-core-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/5.0.4.RELEASE/dc83e08ecdb4ab28339f87358b53d75b4a8d1b9/spring-orm-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/5.0.4.RELEASE/f8e029e54c0267dadb6b9f713f3feb54ec4f3a0e/spring-aop-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/5.0.4.RELEASE/7a8c3d48d4c33621e64d1399721d8e067450fcbd/spring-beans-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/5.0.4.RELEASE/4bda161f2e34c1486f2527a23eb47293567f473c/spring-expression-5.0.4.RELEASE.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.10.0/fec5797a55b786184a537abd39c3fa1449d752d6/log4j-api-2.10.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.10.0/c90b597163cd28ab6d9687edd53db601b6ea75a1/log4j-core-2.10.0.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-digester/commons-digester/2.1/73a8001e7a54a255eef0f03521ec1805dc738ca0/commons-digester-2.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.3.1/c621b54583719ac0310404463d6d99db27e1052c/commons-fileupload-1.3.1.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/c845703de334ddc6b4b3cd26835458cb1cba1f3d/commons-beanutils-1.9.3.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-core/3.0.8/1f71d0545540ad4bd7b4d883b2ff763cffde237/tiles-core-3.0.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-api/1.0.7/c649a9be6df263c888a2195447cd602d530cc233/tiles-request-api-1.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-jsp/3.0.8/7465a65e4b3821a9785995bcb5ce2f74098ab023/tiles-jsp-3.0.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-api/3.0.8/a3c4f741b1cf5ce578b85155cf640a932f617167/tiles-api-3.0.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-servlet/3.0.8/56c7ed54e70912ef6628dca464a54a5ecac587b3/tiles-servlet-3.0.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-extras/3.0.8/4251303209066a9ac1a948d2badd19156b18d14b/tiles-extras-3.0.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-template/3.0.8/70b396cce5516f7069d15398f07bb32c9020a5df/tiles-template-3.0.8.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-servlet/1.0.7/e9b9e3cda2a489b3292ed3a15a558b2b57ad0940/tiles-request-servlet-1.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-request-jsp/1.0.7/6a9bde44749334e9ef85d0bdf854ff20641c113/tiles-request-jsp-1.0.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tiles/tiles-autotag-core-runtime/1.2/100bd3cae1a5debf9afb4ef5c8b36c508d06326/tiles-autotag-core-runtime-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.apache.tomcat/tomcat-jdbc/8.5.28/b00075d3b0e4981596b535f81e521f82a863fe1c/tomcat-jdbc-8.5.28.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/javax.servlet/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/javax.persistence/persistence-api/1.0.2/8a7f96961047da52a53b7347b6a919c6fbc6d7fa/persistence-api-1.0.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.7/9add058589d5d85adeb625859bf2c5eeaaedf12d/mail-1.4.7.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/jstl/jstl/1.2/74aca283cd4f4b4f3e425f5820cda58f44409547/jstl-1.2.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+		<dependent-module deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/skaranam/.gradle/caches/modules-2/files-2.1/org.hibernate/antlr/2.7.5H3/a863e320b29f94775d36da7560873ab996080960/antlr-2.7.5H3.jar">
+			<dependency-type>uses</dependency-type>
+		</dependent-module>
+	</wb-module>
+</project-modules>

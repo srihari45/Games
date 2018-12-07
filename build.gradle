@@ -1,0 +1,116 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+
+sourceCompatibility = 1.8
+
+def currentJvm = org.gradle.internal.jvm.Jvm.current()
+println currentJvm
+
+repositories {
+    mavenCentral()
+}
+
+war {
+	baseName = baseName
+	version = appVersion
+	archiveName = warName
+	duplicatesStrategy= DuplicatesStrategy.EXCLUDE
+}
+
+sourceSets {
+    main {
+        java {
+	    	srcDir 'app/JavaSource'
+	    	srcDir 'web/JavaSource'
+        }
+        resources {
+            srcDir 'app/JavaSource'
+            srcDir 'web/JavaSource'
+        }
+    }
+}
+
+eclipse { 
+	classpath {
+		defaultOutputDir = file('web/WebContent/WEB-INF/classes')
+	}
+}
+
+webAppDirName = 'web/WebContent'
+libsDirName = 'war'
+
+ext {
+	springVersion = "5.0.4.RELEASE"
+	springSecurityVersion = "5.0.3.RELEASE"
+	tilesVersion = "3.0.8"
+	tilesAPIVersion = "1.0.7"
+}
+
+dependencies {
+	configurations.all {
+	   transitive = false
+	}
+
+    compile "commons-collections:commons-collections:3.2.2"
+    compile "org.springframework:spring-context:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-webmvc:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-web:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-core:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-orm:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-aop:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-beans:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-expression:$rootProject.ext.springVersion"
+    compile "org.springframework:spring-tx:$rootProject.ext.springVersion"
+    
+    
+    //Logging API - log4j
+    compile "log4j:log4j:1.2.17"
+    compile "commons-logging:commons-logging:1.2"
+    compile "org.apache.logging.log4j:log4j-api:2.10.0"
+    compile "org.apache.logging.log4j:log4j-core:2.10.0"
+    
+    //Commons jars
+    compile 'commons-io:commons-io:2.4'
+    compile "commons-digester:commons-digester:2.1"
+    compile 'commons-fileupload:commons-fileupload:1.3.1'
+    compile 'commons-codec:commons-codec:1.10'
+    compile "com.google.code.gson:gson:2.8.2"
+    compile "commons-lang:commons-lang:2.6"
+    compile "commons-beanutils:commons-beanutils:1.9.3"
+
+    
+    //Tiles
+    compile "org.apache.tiles:tiles-core:$rootProject.ext.tilesVersion"
+    compile "org.apache.tiles:tiles-request-api:$rootProject.ext.tilesAPIVersion"
+    compile "org.apache.tiles:tiles-jsp:$rootProject.ext.tilesVersion"
+    compile "org.apache.tiles:tiles-api:$rootProject.ext.tilesVersion"
+    compile "org.apache.tiles:tiles-servlet:$rootProject.ext.tilesVersion"
+    compile "org.apache.tiles:tiles-extras:$rootProject.ext.tilesVersion"
+    compile "org.apache.tiles:tiles-template:$rootProject.ext.tilesVersion"
+    compile "org.apache.tiles:tiles-request-servlet:$rootProject.ext.tilesAPIVersion"
+    compile "org.apache.tiles:tiles-request-jsp:$rootProject.ext.tilesAPIVersion"
+    compile "org.apache.tiles:tiles-autotag-core-runtime:1.2"
+    
+    compile "org.slf4j:slf4j-api:1.7.25"
+    testCompile "org.slf4j:slf4j-log4j12:1.7.25"
+    
+    compile "org.apache.tomcat:tomcat-jdbc:8.5.28"
+    compile "javax.servlet:jstl:1.2"
+    
+    compile 'javax.annotation:javax.annotation-api:1.2'
+    compile 'javax.persistence:persistence-api:1.0.2'
+    
+    
+    //mail
+    compile "javax.mail:mail:1.4.7"
+    
+    testCompile "junit:junit:4.12"
+    providedCompile "javax.servlet:javax.servlet-api:4.0.0"
+    providedCompile 'javax.servlet.jsp:jsp-api:2.1'
+    compile 'jstl:jstl:1.2'
+    
+    // runtime
+    runtime 'org.hibernate:antlr:2.7.5H3'
+}
